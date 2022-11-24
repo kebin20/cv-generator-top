@@ -26,11 +26,19 @@ export default function Socials(props) {
     });
   }
 
+function deleteSocials(event, socialsId) {
+  event.stopPropagation()
+  setSocials(oldSocials => oldSocials.filter(social => social.id !== socialsId))
+}
+
+
   const [isSocialsEditing, setIsSocialsEditing] = React.useState(true);
 
   function handleSocialsEdit() {
     setIsSocialsEditing((isSocialsEditing) => !isSocialsEditing);
   }
+
+
 
   return (
     <div className="Socials">
@@ -46,7 +54,9 @@ export default function Socials(props) {
           onHandleSocials={handleSocialsEdit}
         />
       )}
-      {isSocialsEditing && <SocialList socials={socials} />}
+      {isSocialsEditing && <SocialList socials={socials} 
+      onDeleteSocials={deleteSocials}
+      />}
     </div>
   );
 }
