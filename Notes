@@ -1,0 +1,59 @@
+ 
+ Alternative SOlutions: 
+ const [enteredName, setEnteredName] = React.useState({
+    firstName: '',
+    lastName: '',
+  });
+
+  function handleNameChange(e) {
+    const { name, value } = e.target;
+    setEnteredName((prevName) => ({
+      ...prevName,
+      [name]: value,
+    }));
+  }
+
+  return (
+    <div className="name-section">
+      <div className="nameForm">
+        <label htmlFor="name">Full Name:</label>
+        <input
+          type="text"
+          name="firstName"
+          className="firstName"
+          placeholder="First Name"
+          value={enteredName.firstName}
+          onChange={handleNameChange}
+        />
+        <input
+          type="text"
+          name="lastName"
+          className="lastName"
+          placeholder="Last Name"
+          value={enteredName.lastName}
+          onChange={handleNameChange}
+        />
+        <button type="submit">Save</button>
+        <button type="button">Cancel</button>
+      </div>
+      <h2>
+        {enteredName.firstName} {enteredName.lastName}
+      </h2>
+    </div>
+
+
+  // function addSocialsHandler(sName, sUrl) {
+  //   setSocials((prevSocials) => {
+  //     return [
+  //       ...prevSocials,
+  //       { socialsName: sName, socialsUrl: sUrl, id: Math.random().toString() },
+  //     ];
+  //   });
+  // }
+
+
+
+
+Challenges faced: 
+
+- Biggest challenge I'm facing right now is trying to render the lists of socials onto the dom. I have created an array of object in the state for Socials, and have tried to push user inputted data into the array object but for some reason, it is not iterable. I have followed a similar logic pattern from another project (Udemy Max's Course Goal project) for rendering items out as a list after clicking a button, but it doesn't seem to be working. I suspect it has something to do with how the object is laid out in the state, but I'm not sure. 

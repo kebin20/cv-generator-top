@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #023047;
+}
+
+nav {
+  padding: 0.5em;
+  background-color: #fca311;
+}
+
+input {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+
+h1 {
+  color: #1d3557;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2,
+h3 {
+  text-decoration: underline;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+input,
+button {
+  margin-bottom: 1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+/* sidebar styling */
+
+.sidebar {
+  background-color: white;
+  border: 1px solid black;
+  padding: 1.3em;
+}
+
+.contact-row {
+  display: flex;
+}
+
+.display-contact-text {
+  line-height: 1.5em;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.display-name-text {
+  display: flex;
+  align-items: center;
+}
+
+.display-social-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials-button {
+  display: flex;
+}
+
+/* main-content styling */
+
+.main {
+  background-color: white;
+  border: 1px solid black;
+}
