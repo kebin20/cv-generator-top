@@ -4,7 +4,7 @@ import AddQualifications from './AddQualifications';
 import QualificationsList from './QualificationsList';
 
 export default function AddQualifications(props) {
-  const [qualification, setQualification] = React.useState([
+  const [qualifications, setQualifications] = React.useState([
     {
       qualName: 'Tech Certificate',
       orgName: 'Tech Ltd',
@@ -33,8 +33,8 @@ export default function AddQualifications(props) {
 
   function deleteQual(event, qualId) {
     event.stopPropagation();
-    setQualification((oldQualification) =>
-      oldQualification.filter((qual) => qual.id !== qualId)
+    setQualifications((oldQualifications) =>
+      oldQualifications.filter((qual) => qual.id !== qualId)
     );
   }
 
@@ -60,7 +60,7 @@ export default function AddQualifications(props) {
       )}
       {isQualEditing && (
         <QualificationsList
-          qualification={qualification}
+          qualifications={qualifications}
           onDeleteQual={deleteQual}
         />
       )}
