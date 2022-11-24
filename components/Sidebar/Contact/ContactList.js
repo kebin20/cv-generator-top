@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Contact(props) {
+export default function ContactList(props) {
   return (
     <div className="display-contact-text">
       <div className="contact-row">

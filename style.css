@@ -95,12 +95,12 @@ button.trash-btn {
   display: flex;
 }
 
-ul.social-list {
+.social-list {
   padding: 0;
   line-height: 2.5em;
 }
 
-li.social-item {
+.social-item {
   display: flex;
   align-items: center;
 }
