@@ -8,11 +8,13 @@ body {
   background-color: #023047;
 }
 
+/* NAVBAR */
 nav {
   padding: 0.5em;
   background-color: #fca311;
 }
 
+/*GENERAL STYLING */
 input {
   width: 200px;
   display: flex;
@@ -37,11 +39,14 @@ h3 {
   cursor: pointer;
   font-size: 0.9rem;
   color: grey;
+  margin-bottom: 1em;
 }
 
-input,
-button {
-  margin-bottom: 1em;
+button.trash-btn {
+  border: none;
+  background-color: white;
+  font-size: 1.1rem;
+  margin: 0 auto;
 }
 
 .container {
@@ -51,7 +56,7 @@ button {
   padding: 1em;
 }
 
-/* sidebar styling */
+/* SIDEBAR STYLING */
 
 .sidebar {
   background-color: white;
@@ -59,14 +64,7 @@ button {
   padding: 1.3em;
 }
 
-.contact-row {
-  display: flex;
-}
-
-.display-contact-text {
-  line-height: 1.5em;
-}
-
+/* Name styling */
 .name-form {
   display: flex;
   flex-direction: column;
@@ -78,16 +76,36 @@ button {
   align-items: center;
 }
 
+/* Contact styling */
+.contact-row {
+  display: flex;
+}
+
+.display-contact-text {
+  line-height: 1.5em;
+}
+
+/* Socials styling */
 .display-social-text {
   display: flex;
   flex-direction: column;
 }
 
-.socials-button {
+.socials-row {
   display: flex;
 }
 
-/* main-content styling */
+ul.social-list {
+  padding: 0;
+  line-height: 2.5em;
+}
+
+li.social-item {
+  display: flex;
+  align-items: center;
+}
+
+/* MAIN CONTENT STYLING */
 
 .main {
   background-color: white;

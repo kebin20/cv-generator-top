@@ -42,7 +42,7 @@ function deleteSocials(event, socialsId) {
 
   return (
     <div className="Socials">
-      <div className="socials-button">
+      <div className="socials-row">
         <h3>Socials</h3>
         <button className="edit-button" onClick={handleSocialsEdit}>
           <i className="fa-solid fa-pen-to-square"></i>
