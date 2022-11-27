@@ -10,7 +10,7 @@ body {
 
 /* NAVBAR */
 nav {
-  padding: 0.5em;
+  padding: 1.5em;
   background-color: #fca311;
 }
 
@@ -26,6 +26,7 @@ h1 {
   color: #1d3557;
   margin: 0 auto;
   text-align: center;
+  font-size: 2rem;
 }
 
 h2,
@@ -51,7 +52,7 @@ button.trash-btn {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 17em auto;
   margin-top: 1em;
   padding: 1em;
 }
