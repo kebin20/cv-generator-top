@@ -38,6 +38,7 @@ export default function AddQualifications(props) {
       authUrl: enteredAuthUrl,
     };
 
+    props.onHandleQual();
     props.onSaveQualificationsData(qualificationData);
     setEnteredQualName('');
     setEnteredOrgName('');
@@ -101,7 +102,9 @@ export default function AddQualifications(props) {
           onChange={authUrlChangeHandler}
         />
         <button type="submit">Save</button>
-        <button type="button">Cancel</button>
+        <button type="button" onClick={props.onHandleQual}>
+          Cancel
+        </button>
       </div>
     </form>
   );

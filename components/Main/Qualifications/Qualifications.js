@@ -16,7 +16,7 @@ export default function AddQualifications(props) {
 
   function addQualHandler(qualData) {
     const { qualName, orgName, date, authNumber, authUrl } = qualData;
-    setQual((prevQual) => {
+    setQualifications((prevQual) => {
       return [
         ...prevQual,
         {
@@ -54,7 +54,7 @@ export default function AddQualifications(props) {
       </div>
       {!isQualEditing && (
         <AddQualifications
-          onSaveQualData={addQualHandler}
+          onSaveQualificationsData={addQualHandler}
           onHandleQual={handleQualEdit}
         />
       )}
