@@ -11,7 +11,7 @@ export default function SocialList(props) {
               className="trash-btn"
               onClick={(event) => props.onDeleteSocials(event, social.id)}
             >
-              <i class="fa-solid fa-trash"></i>
+              <i className="fa-solid fa-trash"></i>
             </button>
           </li>
         ))}
