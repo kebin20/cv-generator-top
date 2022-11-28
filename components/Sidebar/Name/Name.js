@@ -2,6 +2,7 @@ import React from 'react';
 
 import AddNewName from './AddNewName';
 import NewName from './NewName';
+import './Name.css'
 
 export default function Name(props) {
   const [userName, setUserName] = React.useState({

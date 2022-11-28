@@ -3,6 +3,8 @@ import React from 'react';
 import AddSocials from './AddSocials';
 import SocialList from './SocialList';
 
+import './Socials.css';
+
 export default function Socials(props) {
   const [socials, setSocials] = React.useState([
     {
@@ -26,19 +28,18 @@ export default function Socials(props) {
     });
   }
 
-function deleteSocials(event, socialsId) {
-  event.stopPropagation()
-  setSocials(oldSocials => oldSocials.filter(social => social.id !== socialsId))
-}
-
+  function deleteSocials(event, socialsId) {
+    event.stopPropagation();
+    setSocials((oldSocials) =>
+      oldSocials.filter((social) => social.id !== socialsId)
+    );
+  }
 
   const [isSocialsEditing, setIsSocialsEditing] = React.useState(true);
 
   function handleSocialsEdit() {
     setIsSocialsEditing((isSocialsEditing) => !isSocialsEditing);
   }
-
-
 
   return (
     <div className="Socials">
@@ -54,9 +55,9 @@ function deleteSocials(event, socialsId) {
           onHandleSocials={handleSocialsEdit}
         />
       )}
-      {isSocialsEditing && <SocialList socials={socials} 
-      onDeleteSocials={deleteSocials}
-      />}
+      {isSocialsEditing && (
+        <SocialList socials={socials} onDeleteSocials={deleteSocials} />
+      )}
     </div>
   );
 }

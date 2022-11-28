@@ -1,0 +1,19 @@
+/* Socials styling */
+.display-social-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials-row {
+  display: flex;
+}
+
+.social-list {
+  padding: 0;
+  line-height: 2.5em;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+}

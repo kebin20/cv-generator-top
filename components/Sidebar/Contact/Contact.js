@@ -3,6 +3,8 @@ import React from 'react';
 import AddContact from './AddContact';
 import ContactList from './ContactList';
 
+import './Contact.css'
+
 export default function Contact(props) {
   const [contactDetails, setContactDetails] = React.useState({
     phoneNumber: '08-78956',

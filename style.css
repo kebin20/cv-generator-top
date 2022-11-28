@@ -63,62 +63,6 @@ button.trash-btn {
   padding: 1em;
 }
 
-/* SIDEBAR STYLING */
-
-.sidebar {
-  background-color: white;
-  border: 1px solid black;
-  padding: 1.3em;
-}
-
-/* Name styling */
-.name-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-}
-
-.display-name-text {
-  display: flex;
-  align-items: center;
-}
-
-/* Contact styling */
-.contact-row {
-  display: flex;
-}
-
-.display-contact-text {
-  line-height: 1.5em;
-}
-
-/* Socials styling */
-.display-social-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.socials-row {
-  display: flex;
-}
-
-.social-list {
-  padding: 0;
-  line-height: 2.5em;
-}
-
-.social-item {
-  display: flex;
-  align-items: center;
-}
-
-/* MAIN CONTENT STYLING */
-
-.main {
-  background-color: white;
-  border: 1px solid black;
-}
-
 /* Qualifications Section Styling */
 
 .qualifications {

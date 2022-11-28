@@ -1,0 +1,8 @@
+/* Contact styling */
+.contact-row {
+  display: flex;
+}
+
+.display-contact-text {
+  line-height: 1.5em;
+}

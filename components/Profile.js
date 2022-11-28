@@ -4,6 +4,8 @@ import Name from './Sidebar/Name/Name';
 import Contact from './Sidebar/Contact/Contact';
 import Socials from './Sidebar/Socials/Socials';
 
+import './Sidebar.css'
+
 export default function Profile(props) {
   return (
     <div className="sidebar">

@@ -1,0 +1,11 @@
+/* Name styling */
+.name-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.display-name-text {
+  display: flex;
+  align-items: center;
+}
