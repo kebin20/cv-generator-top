@@ -20,6 +20,12 @@ input {
   display: flex;
   flex-direction: column;
   border-radius: 6px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+button {
+  margin-top: 1em;
 }
 
 h1 {
@@ -46,8 +52,8 @@ h3 {
 button.trash-btn {
   border: none;
   background-color: white;
-  font-size: 1.1rem;
-  margin: 0 auto;
+  font-size: 1rem;
+  margin-left: 1em;
 }
 
 .container {
@@ -111,4 +117,43 @@ button.trash-btn {
 .main {
   background-color: white;
   border: 1px solid black;
+}
+
+/* Qualifications Section Styling */
+
+.qualifications {
+  padding-left: 2em;
+}
+
+.qualifications > input {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.qualifications-row {
+  display: flex;
+  padding-left: 2em;
+}
+
+ul.qualifications-list {
+  margin: 0;
+}
+
+li.qualification-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.qualification-title {
+  display: flex;
+}
+
+.qualification-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.qualification-content > span {
+  margin: 0.3em 0.8em;
+  font-size: 0.9rem;
 }

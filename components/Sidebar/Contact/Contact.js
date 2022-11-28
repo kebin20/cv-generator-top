@@ -5,7 +5,7 @@ import ContactList from './ContactList';
 
 export default function Contact(props) {
   const [contactDetails, setContactDetails] = React.useState({
-    phoneNumber: '01658789',
+    phoneNumber: '08-78956',
     email: 'johndoe@cv.com',
     linkedIn: 'johnlinkedinprofile',
   });

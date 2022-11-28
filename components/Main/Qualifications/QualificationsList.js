@@ -3,20 +3,24 @@ import React from 'react';
 export default function QualificationsList(props) {
   return (
     <div>
-      <ul>
+      <ul className="qualifications-list">
         {props.qualifications.map((qualification) => (
           <li key={qualification.id} className="qualification-item">
-            {qualification.qualName}
-            <button
-              className="trash-btn"
-              onClick={(event) => props.onDeleteQual(event, qualification.id)}
-            >
-              <i class="fa-solid fa-trash"></i>
-            </button>
-            {qualification.orgName}
-            Date Issued: {qualification.date}
-            {qualification.authNumber}
-            {qualification.authUrl}
+            <div className="qualification-title">
+              <h3>{qualification.qualName}</h3>
+              <button
+                className="trash-btn"
+                onClick={(event) => props.onDeleteQual(event, qualification.id)}
+              >
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <div className="qualification-content">
+              <span>{qualification.orgName}</span>
+              <span> Date Issued: {qualification.date}</span>
+              <span>{qualification.authNumber}</span>
+              <span>{qualification.authUrl}</span>
+            </div>
           </li>
         ))}
       </ul>

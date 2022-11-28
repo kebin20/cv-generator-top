@@ -47,7 +47,7 @@ export default function AddQualifications(props) {
   return (
     <div className="Qualifications">
       <div className="qualifications-row">
-        <h3>Qualifications</h3>
+        <h2>Qualifications</h2>
         <button className="edit-button" onClick={handleQualEdit}>
           <i className="fa-solid fa-pen-to-square"></i>
         </button>
