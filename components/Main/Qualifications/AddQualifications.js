@@ -49,7 +49,7 @@ export default function AddQualifications(props) {
 
   return (
     <form onSubmit={submitHandler} action="#">
-      <div className="qualifications">
+      <div className="qualifications-form">
         <label htmlFor="qualifications__label">Qualifications</label>
         <input
           type="text"

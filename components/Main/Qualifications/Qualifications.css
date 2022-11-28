@@ -1,0 +1,39 @@
+/* Qualifications Section Styling */
+
+.qualifications-form {
+  padding-left: 2em;
+}
+
+.qualifications-form > input {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.qualifications-row {
+  display: flex;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+ul.qualifications-list {
+  margin: 0;
+}
+
+li.qualification-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.qualification-title {
+  display: flex;
+}
+
+.qualification-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.qualification-content > span {
+  margin: 0.3em 0.8em;
+  font-size: 0.9rem;
+}

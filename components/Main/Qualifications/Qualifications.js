@@ -1,4 +1,5 @@
 import React from 'react';
+import './Qualifications.css';
 
 import AddQualifications from './AddQualifications';
 import QualificationsList from './QualificationsList';
