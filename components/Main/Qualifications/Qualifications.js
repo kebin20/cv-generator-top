@@ -4,7 +4,7 @@ import './Qualifications.css';
 import AddQualifications from './AddQualifications';
 import QualificationsList from './QualificationsList';
 
-export default function AddQualifications(props) {
+export default function Qualifications(props) {
   const [qualifications, setQualifications] = React.useState([
     {
       qualName: 'Tech Certificate',

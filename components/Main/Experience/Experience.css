@@ -1,0 +1,39 @@
+/* Experience Section Styling */
+
+.experience-form {
+  padding-left: 2em;
+}
+
+.experience-form > input {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.experience-row {
+  display: flex;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+ul.experience-list {
+  margin: 0;
+}
+
+li.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-title {
+  display: flex;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-content > span {
+  margin: 0.3em 0.8em;
+  font-size: 0.9rem;
+}

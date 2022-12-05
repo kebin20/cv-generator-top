@@ -44,7 +44,7 @@ export default function AddExperience(props) {
       jobDescription: enteredJobDesc,
     };
 
-    props.onHandleExperience();
+    props.onHandleExp();
     props.onSaveExperienceData(experienceData);
     setEnteredCompanyName('');
     setEnteredLocation('');
@@ -57,7 +57,76 @@ export default function AddExperience(props) {
   return (
     <form onSubmit={submitHandler} action="#">
       <div className="experience-form">
-        <label htmlFor="experience__label">Experience</label>
+        <label htmlFor="company-name">Company Name:</label>
+        <input
+          type="text"
+          name="company-name"
+          className="company__input__name"
+          placeholder="ABC Ltd"
+          aria-label="company name input field"
+          value={enteredCompanyName}
+          onChange={companyNameChangeHandler}
+          required
+        />
+        <label htmlFor="company-location">Location:</label>
+        <input
+          type="text"
+          name="company-location"
+          className="company__input__location"
+          placeholder="ABC Street"
+          aria-label="company name input location"
+          value={enteredLocation}
+          onChange={locationChangeHandler}
+          required
+        />
+        <label htmlFor="start-date">Start Date:</label>
+        <input
+          type="date"
+          name="start-date"
+          className="company__input__start-date"
+          placeholder="20-03-2020"
+          aria-label="start date input field"
+          value={enteredJobStartDate}
+          onChange={jobStartDateChangeHandler}
+          required
+        />
+        <label htmlFor="start-date">End Date:</label>
+        <input
+          type="date"
+          name="end-date"
+          className="company__input__end-date"
+          placeholder="25-05-2021"
+          aria-label="end date input field"
+          value={enteredJobEndDate}
+          onChange={jobEndDateChangeHandler}
+          required
+        />
+        <label htmlFor="company-name">Job Title:</label>
+        <input
+          type="text"
+          name="job-title"
+          className="company__input__job-title"
+          placeholder="Software Developer"
+          aria-label="job title input field"
+          value={enteredJobTitle}
+          onChange={jobTitleChangeHandler}
+          required
+        />
+        <label htmlFor="company-name">Job Description:</label>
+        <textarea
+          type="text"
+          name="job-description"
+          className="company__input__job-description"
+          placeholder="Did random things, which increased sales"
+          aria-label="job-description input field"
+          value={enteredJobDesc}
+          onChange={jobDescChangeHandler}
+          required
+        />
+                <button type="submit">Save</button>
+        <button type="button" onClick={props.onHandleExp}>
+          Cancel
+        </button>
       </div>
     </form>
   );
