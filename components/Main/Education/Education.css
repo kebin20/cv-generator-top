@@ -17,6 +17,7 @@
 
 ul.education-list {
   margin: 0;
+  padding-bottom: 2em;
 }
 
 li.education-item {
