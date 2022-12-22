@@ -123,8 +123,8 @@ export default function AddExperience(props) {
           onChange={jobDescChangeHandler}
           required
         />
-        <button type="submit">Save</button>
-        <button type="button" onClick={props.onHandleExp}>
+        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="cancel-btn" onClick={props.onHandleExp}>
           Cancel
         </button>
       </div>

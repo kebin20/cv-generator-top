@@ -53,8 +53,8 @@ export default function Social(props) {
           onChange={socialUrlChangeHandler}
           required
         />
-        <button type="submit">Save</button>
-        <button type="button" onClick={props.onHandleSocials}>
+        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="cancel-btn" onClick={props.onHandleSocials}>
           Cancel
         </button>
       </div>

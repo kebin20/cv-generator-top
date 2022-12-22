@@ -101,8 +101,8 @@ export default function AddQualifications(props) {
           value={enteredAuthUrl}
           onChange={authUrlChangeHandler}
         />
-        <button type="submit">Save</button>
-        <button type="button" onClick={props.onHandleQual}>
+        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="cancel-btn" onClick={props.onHandleQual}>
           Cancel
         </button>
       </div>

@@ -69,8 +69,8 @@ export default function ContactForm(props) {
           onChange={linkedInChangeHandler}
           required
         />
-        <button type="submit">Save</button>
-        <button type="button" onClick={props.onHandleContactEdit}>
+        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="cancel-btn" onClick={props.onHandleContactEdit}>
           Cancel
         </button>
       </div>

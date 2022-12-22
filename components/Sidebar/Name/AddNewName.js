@@ -48,8 +48,8 @@ export default function NameForm(props) {
           onChange={lastNameChangeHandler}
           required
         />
-        <button type="submit">Save</button>
-        <button type="button" onClick={props.onHandleNameEdit}>
+        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="cancel-btn" onClick={props.onHandleNameEdit}>
           Cancel
         </button>
       </div>

@@ -24,10 +24,6 @@ input {
   margin-bottom: 0.5em;
 }
 
-button {
-  margin-top: 1em;
-}
-
 h1 {
   color: #1d3557;
   margin: 0 auto;
@@ -54,6 +50,11 @@ button.trash-btn {
   background-color: white;
   font-size: 1rem;
   margin-left: 1em;
+  cursor: pointer;
+}
+
+.save-btn, .cancel-btn {
+  background-color: none;
 }
 
 .container {

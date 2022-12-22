@@ -88,8 +88,8 @@ export default function AddEducation(props) {
           onChange={gradDateChangeHandler}
           required
         />
-        <button type="submit">Save</button>
-        <button type="button" onClick={props.onHandleExp}>
+        <button type="submit" className="save-btn">Save</button>
+        <button type="button" className="cancel-btn" onClick={props.onHandleExp}>
           Cancel
         </button>
       </div>
