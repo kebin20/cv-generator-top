@@ -37,7 +37,7 @@ function addExpHandler(expData) {
 
 function deleteExp(event, expId) {
   event.stopPropagation();
-  setExperience(oldExperience => oldExperience.filter(exp => exp.id !== exp.id !== expId) )
+  setExperience(oldExperience => oldExperience.filter(exp => exp.id !== expId) )
 }
 
 const [isExpEditing, setIsExpEditing] = React.useState(true)
