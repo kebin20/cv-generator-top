@@ -62,4 +62,5 @@ button.trash-btn {
   grid-template-columns: 17em auto;
   margin-top: 1em;
   padding: 1em;
+  width: 50em;
 }
